@@ -5,7 +5,7 @@ define(['jquery'],function($){
 			//今日新品
 		$.ajax({
 			type:"get",
-			url:"../data/home.json",
+			url:"data/home.json",
 			async:true,
 			success:function(res){
 				var $oDiv=$("<div>123</div>");
@@ -15,12 +15,13 @@ define(['jquery'],function($){
 					$(".bot div").eq(idx).append($("<span>").text(xin.name));
 					$(".bot div").eq(idx).append($("<b>").text(xin.cost));
 					$(".bot div").eq(idx).append($("<dd>").text('折起'));
-					$(".bot div").eq(idx).append($("<dt>").hide().text('123'));
+					$(".bot div").eq(idx).append($("<dt>").hide().text('距离活动结束还剩'+parseInt(Math.random()*10)+'天'));
 					
 				});
 				//鼠标移入事件
 				$(".bot ").on("mouseenter",'div',function(){
 					$(this).find('dt').show();
+					
 					
 					
 				});
@@ -34,7 +35,7 @@ define(['jquery'],function($){
 		//热门商品
 		$.ajax({
 			type:"get",
-			url:"../data/hot.json",
+			url:"data/hot.json",
 			async:true,
 			success:function(res){
 				
@@ -44,7 +45,7 @@ define(['jquery'],function($){
 					$(".hot-tu div").eq(idx).append($("<span>").text(xin.name));
 					$(".hot-tu div").eq(idx).append($("<b>").text(xin.cost));
 					$(".hot-tu div").eq(idx).append($("<dd>").text('折起'));
-					$(".hot-tu div").eq(idx).append($("<dt>").hide().text('123'));
+					$(".hot-tu div").eq(idx).append($("<dt>").hide().text('距离活动结束还剩'+parseInt(Math.random()*10)+'天'));
 					
              
 					
@@ -52,7 +53,7 @@ define(['jquery'],function($){
 				});
 				//鼠标移入事件
 				$(".hot-tu ").on("mouseenter",'div',function(){
-					console.log('123')
+					
 					$(this).find('dt').show();
 					
 					
@@ -67,7 +68,7 @@ define(['jquery'],function($){
 		//女士用品
 		$.ajax({
 			type:"get",
-			url:"../data/woman.json",
+			url:"data/woman.json",
 			async:true,
 			success:function(res){
 				
@@ -78,7 +79,7 @@ define(['jquery'],function($){
 					$(".woman .right div").eq(idx).append($("<span>").text(xin.name));
 					$(".woman .right div").eq(idx).append($("<b>").text(xin.cost));
 					$(".woman .right div").eq(idx).append($("<dd>").text('折起'));
-					$(".woman .right div").eq(idx).append($("<dt>").hide().text('123'));
+					$(".woman .right div").eq(idx).append($("<dt>").hide().text('距离活动结束还剩'+parseInt(Math.random()*10)+'天'));
 					
              
 					
@@ -98,10 +99,10 @@ define(['jquery'],function($){
 			}
 			
 		});
-		
+		//男士用品
 		$.ajax({
 			type:"get",
-			url:"../data/man.json",
+			url:"data/man.json",
 			async:true,
 			success:function(res){
 				
@@ -112,7 +113,7 @@ define(['jquery'],function($){
 					$(".man .right div").eq(idx).append($("<span>").text(xin.name));
 					$(".man .right div").eq(idx).append($("<b>").text(xin.cost));
 					$(".man .right div").eq(idx).append($("<dd>").text('折起'));
-					$(".man .right div").eq(idx).append($("<dt>").hide().text('123'));
+					$(".man .right div").eq(idx).append($("<dt>").hide().text('距离活动结束还剩'+parseInt(Math.random()*10)+'天'));
 					
              
 					
@@ -132,6 +133,33 @@ define(['jquery'],function($){
 			}
 			
 		});
+		//更多品牌
+		$.ajax({
+			type:"get",
+			url:"data/brand.json",
+			async:true,
+			success:function(res){
+				
+				$.each(res, function(idx,xin) {
+					
+					$(".brand ").append($("<div></div>"));
+					$(".brand div").eq(idx).append($("<img/>").attr("src",xin.imgurl));
+					
+					
+             
+					
+					
+				});
+				
+			}
+			
+		});
+		
+		//从后台获取图片信息
+		
+        
+        
+        
 		
 		}
 	}

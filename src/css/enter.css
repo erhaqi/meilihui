@@ -1,0 +1,189 @@
+@charset "UTF-8";
+body {
+  background: lavender; }
+
+.main {
+  width: 70%;
+  margin: 0 auto;
+  height: 850px;
+  background: url(../img/register/re1.jpg) no-repeat;
+  position: relative; }
+  .main .title {
+    width: 50%;
+    height: 100px;
+    margin: 0 auto; }
+  .main .biao {
+    position: absolute;
+    width: 380px;
+    height: 500px;
+    right: 20%;
+    top: 20%; }
+    .main .biao .top {
+      width: 65%;
+      height: 30px;
+      float: left;
+      margin-left: 90px; }
+      .main .biao .top span {
+        display: inline-block; }
+      .main .biao .top :nth-child(1) {
+        float: left;
+        font-size: 16px; }
+      .main .biao .top :nth-child(2) {
+        float: right;
+        color: lightgray;
+        font-size: 12px; }
+        .main .biao .top :nth-child(2) a {
+          display: inline-block;
+          float: right;
+          font-size: 15px;
+          color: red;
+          text-decoration: underline;
+          opacity: 0.8; }
+    .main .biao .table {
+      width: 100%;
+      float: left;
+      height: 130px; }
+      .main .biao .table lable {
+        font-size: 15px; }
+      .main .biao .table input {
+        height: 25px;
+        margin-top: 14px;
+        width: 66%; }
+      .main .biao .table .hint {
+        width: 50%;
+        height: 20px;
+        background: red;
+        margin-left: 88px;
+        visibility: hidden; }
+    .main .biao .btn {
+      width: 78%;
+      margin: 0 auto;
+      height: 50px;
+      float: left;
+      margin-top: 5px;
+      margin-left: 44px; }
+      .main .biao .btn button {
+        width: 86%;
+        height: 38px;
+        background: red;
+        border: none;
+        float: right;
+        margin-bottom: 5px;
+        font-family: "微软雅黑";
+        color: white;
+        font-size: 20px; }
+    .main .biao .zidong {
+      width: 78%;
+      margin: 0 auto;
+      height: 50px;
+      float: left;
+      margin-top: 5px;
+      margin-left: 86px; }
+      .main .biao .zidong span {
+        font-size: 12px;
+        display: inline-block; }
+        .main .biao .zidong span a {
+          color: lightgray;
+          text-decoration: underline; }
+        .main .biao .zidong span a:hover {
+          color: darkorange; }
+      .main .biao .zidong :nth-child(1) {
+        float: left; }
+      .main .biao .zidong :nth-child(2) {
+        float: right;
+        margin-right: 39px; }
+    .main .biao .lian {
+      width: 100%;
+      float: left;
+      height: 30px;
+      margin-left: 4px; }
+      .main .biao .lian span {
+        display: inline-block;
+        text-align: center; }
+      .main .biao .lian :nth-child(2) {
+        font-size: 20px;
+        width: 10%; }
+      .main .biao .lian :nth-child(3) {
+        font-size: 20px;
+        width: 10%; }
+    .main .biao .underline {
+      width: 90%;
+      border-top: 1px solid darkgray;
+      height: 1;
+      float: left; }
+    .main .biao .erwei {
+      width: 78%;
+      font-size: 12px;
+      float: right;
+      margin-top: 10px; }
+      .main .biao .erwei span {
+        display: inline-block;
+        width: 110px;
+        height: 110px;
+        float: left;
+        white-space: pre-wrap; }
+
+/*底部*/
+.foot {
+  width: 100%;
+  height: 150px;
+  float: left;
+  background: white;
+  position: absolute;
+  bottom: 0px; }
+  .foot .table1 {
+    width: 900px;
+    margin: 0 auto;
+    display: flex; }
+    .foot .table1 li {
+      flex: 1;
+      height: 80px;
+      border-right: 1px solid darkgrey;
+      text-align: center;
+      margin-top: 20px; }
+      .foot .table1 li a {
+        display: block;
+        height: 50px;
+        color: black;
+        font-size: 30px; }
+      .foot .table1 li a:hover {
+        color: #DF5000; }
+      .foot .table1 li span {
+        font-size: 12px;
+        display: block; }
+    .foot .table1 :nth-child(6) {
+      border-right: none; }
+  .foot .table2 {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px; }
+    .foot .table2 li {
+      flex: 1;
+      text-align: center;
+      font-size: 12px; }
+      .foot .table2 li a {
+        color: black; }
+      .foot .table2 li a:hover {
+        color: #DF5000; }
+  .foot .shengming {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 30px; }
+    .foot .shengming span {
+      font-size: 12px; }
+    .foot .shengming :nth-child(1) {
+      float: left; }
+    .foot .shengming :nth-child(2) {
+      float: right; }
+  .foot .pg {
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 5px; }
+    .foot .pg span {
+      display: inline-block; }
+    .foot .pg :nth-child(1) {
+      float: left; }
+    .foot .pg :nth-child(2) {
+      float: right; }

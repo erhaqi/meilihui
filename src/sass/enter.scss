@@ -1,0 +1,69 @@
+$navColor:#DF5000;//导航划过颜色
+body{background: lavender;}
+.main{
+    width: 70%;margin: 0 auto;height:850px;background: url(../img/register/re1.jpg) no-repeat;position: relative;
+    .title{width: 50%;height: 100px;margin: 0 auto;}
+    .biao{position: absolute;width:380px;height: 500px;right: 20%;top: 20%;
+    .top{width: 65%;height:30px;float:left;margin-left:90px;
+    span{display: inline-block;}
+    :nth-child(1){float: left;font-size: 16px;}
+    :nth-child(2){float: right;color: lightgray;font-size: 12px;
+    a{display: inline-block;float: right;font-size:15px ;color: red;text-decoration: underline;opacity: 0.8;}}}
+    
+    
+    .table{width: 100%;float: left;height: 130px;
+    lable{font-size: 15px;}
+    input{height: 25px;margin-top: 14px;width:66%;}
+    .hint{width: 50%;height: 20px;background: red;margin-left: 88px;visibility: hidden;}}
+    
+    
+    .btn{
+        width: 78%;margin:0 auto;height: 50px;float: left;margin-top: 5px;margin-left: 44px;
+        button{width: 86%;height: 38px;background: red;border: none;float: right;margin-bottom:5px;font-family: "微软雅黑";color: white;font-size: 20px;}
+    }
+    .zidong{width: 78%;margin:0 auto;height: 50px;float: left;margin-top: 5px;margin-left: 86px;
+    span{font-size: 12px;display: inline-block;
+    a{color: lightgray;text-decoration: underline;}
+    a:hover{color: darkorange;}}
+    :nth-child(1){float: left;}
+    :nth-child(2){float: right;margin-right:39px }}
+    .lian{width: 100%;float: left;height: 30px;margin-left:4px;
+    span{display: inline-block;text-align: center;}
+    :nth-child(2){font-size: 20px;width: 10%;}
+    :nth-child(3){font-size: 20px;width: 10%;}}
+      .underline{width: 90%;border-top: 1px solid darkgray;height: 1;float: left;}
+      .erwei{width: 78%;font-size: 12px;float:right;margin-top: 10px;
+      span{display: inline-block; width: 110px;height: 110px;float: left;white-space: pre-wrap;}}
+    }
+   
+}
+/*底部*/
+      .foot{
+          width: 100%;height: 150px;float: left;background:white ;position: absolute;bottom: 0px;
+          .table1{width: 900px;margin: 0 auto;display: flex;
+          li{flex: 1;height: 80px;border-right: 1px solid darkgrey;text-align: center;margin-top: 20px;
+          
+          a{display: block;height:50px;color: black;font-size: 30px;}
+          a:hover{color: $navColor;}
+          span{font-size: 12px; display: block;}}
+          :nth-child(6){border-right: none}
+          }
+          .table2{width: 600px;margin: 0 auto;display: flex;margin-top: 10px;
+          li{flex:1;text-align: center;font-size: 12px;
+          a{color: black;}
+          a:hover{color:$navColor ;}}}
+          .shengming{
+              width: 500px;margin: 0 auto;margin-top: 15px;height:30px;
+              span{font-size: 12px;}
+              :nth-child(1){float: left;}
+              :nth-child(2){float: right ;}
+          }
+          .pg{
+              width: 180px;margin: 0 auto;margin-top: 5px;
+              span{display: inline-block;}
+              :nth-child(1){float: left;}
+              :nth-child(2){float: right;}
+          }
+       
+      
+}

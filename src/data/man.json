@@ -1,17 +1,17 @@
 [
-  {"imgurl": "../img/man/man1.jpg", 
+  {"imgurl": "img/man/man1.jpg", 
     "name": "KANZ   德国凯姿童装(2件3折) ", 
     "cost": "2.5" 
     },
-    {"imgurl": "../img/man/man2.jpg",
+    {"imgurl": "img/man/man2.jpg",
     "name": "ALEXANDER WANG & ALEXANDER MCQUEEN   街拍新风尚 服饰包配专场", 
     "cost": "9" 
     },
-    {"imgurl": "../img/man/man3.jpg",
+    {"imgurl": "img/man/man3.jpg",
     "name": "CRUMPLER   澳洲式休闲 小野人包袋", 
     "cost": "9" 
     },
-    {"imgurl": "../img/man/man4.jpg",
+    {"imgurl": "img/man/man4.jpg",
     "name": "SUNSEEKER 夏日泳装大放价   (全场1件8折，2件7折）", 
     "cost": "3" 
     }

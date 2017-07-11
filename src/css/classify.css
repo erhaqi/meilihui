@@ -1,0 +1,443 @@
+@charset "UTF-8";
+/*头部样式*/
+.top {
+  width: 100%;
+  height: 30px;
+  background-color: #F7F7F7;
+  font-size: 12px; }
+  .top .top-in {
+    width: 900px;
+    margin: 0 auto; }
+  .top a {
+    color: black;
+    display: inline-block;
+    width: 77px;
+    margin-top: 7px; }
+  .top a:hover {
+    color: red; }
+  .top .left {
+    float: left; }
+    .top .left :nth-child(1) a {
+      color: red; }
+    .top .left :nth-child(1) img {
+      display: inline-block; }
+    .top .left li {
+      float: left;
+      text-align: center; }
+      .top .left li a {
+        border-right: 1px solid black; }
+    .top .left :nth-child(3) a {
+      border-right: none; }
+  .top .right {
+    float: right; }
+    .top .right li {
+      float: left;
+      width: 80px;
+      text-align: center; }
+      .top .right li a {
+        border-right: 1px solid black; }
+    .top .right :nth-child(3) a {
+      border-right: none; }
+      .top .right :nth-child(3) a span {
+        display: inline-block;
+        width: 50px;
+        float: left;
+        line-height: 18px; }
+
+/*顶部下方图片*/
+.top-bot {
+  width: 940px;
+  height: 100px;
+  margin: 0 auto;
+  background: url(../img/top-in.jpg) no-repeat;
+  background-size: cover; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100; }
+
+/*导航*/
+.nav {
+  float: left;
+  width: 100%;
+  height: 50px;
+  background: black; }
+  .nav .hang {
+    width: 900px;
+    margin: 0 auto; }
+    .nav .hang ul {
+      float: left;
+      display: flex;
+      width: 900px; }
+      .nav .hang ul li {
+        float: left;
+        flex: 1;
+        line-height: 48px; }
+      .nav .hang ul a {
+        font-size: 14px;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        position: relative; }
+        .nav .hang ul a div {
+          width: 400px;
+          height: 300px;
+          background: white;
+          position: absolute;
+          top: 49px;
+          z-index: 100;
+          box-shadow: 3px 3px 3px darkgray; }
+          .nav .hang ul a div h6 {
+            display: block;
+            width: 90%;
+            height: 40px;
+            border-bottom: 1px solid darkgray;
+            margin: 0 auto; }
+          .nav .hang ul a div ol {
+            width: 100%;
+            height: 200px;
+            margin-left: 20px; }
+            .nav .hang ul a div ol li {
+              color: darkgray;
+              clear: none;
+              width: 100%;
+              height: 30px;
+              font-size: 12px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: normal;
+              text-align: left; }
+            .nav .hang ul a div ol li:hover {
+              color: darkorange; }
+      .nav .hang ul :nth-child(9) .hezi {
+        width: 300px;
+        right: -70%;
+        height: 300px;
+        overflow: auto; }
+        .nav .hang ul :nth-child(9) .hezi .xing {
+          width: 300px;
+          height: 100px;
+          border-bottom: 1px solid #ddd;
+          text-align: center; }
+          .nav .hang ul :nth-child(9) .hezi .xing img {
+            display: inline-block;
+            width: 50px;
+            height: 70px;
+            float: left;
+            border: 1px solid darkgray;
+            margin-top: 15px;
+            margin-left: 5px; }
+          .nav .hang ul :nth-child(9) .hezi .xing dl {
+            display: inline-block;
+            float: left;
+            width: 160px;
+            font-size: 12px;
+            margin-top: 12px;
+            margin-left: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal; }
+            .nav .hang ul :nth-child(9) .hezi .xing dl span {
+              display: block;
+              height: 30px; }
+            .nav .hang ul :nth-child(9) .hezi .xing dl :nth-child(1) {
+              width: 160px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: normal; }
+            .nav .hang ul :nth-child(9) .hezi .xing dl :nth-child(2) {
+              width: 70px;
+              color: darkslategray; }
+          .nav .hang ul :nth-child(9) .hezi .xing dt {
+            display: inline-block;
+            float: left;
+            margin: 5px;
+            color: darkgray;
+            height: 100%;
+            width: 30px;
+            line-height: 170px; }
+        .nav .hang ul :nth-child(9) .hezi :last-child {
+          border: none; }
+      .nav .hang ul a:hover {
+        color: #DF5000; }
+      .nav .hang ul .new {
+        background: url(../img/xiaotupiao/new.png) no-repeat top right 13px; }
+      .nav .hang ul :nth-child(1) a {
+        color: #DF5000; }
+      .nav .hang ul :nth-child(9) a {
+        width: 200px;
+        text-align: right;
+        padding-right: 5px; }
+      .nav .hang ul :nth-child(9) a span {
+        border-right: 1px solid white; }
+
+/*主体*/
+.main {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto; }
+  .main .path {
+    width: 100%;
+    float: left;
+    height: 45px;
+    line-height: 44px;
+    font-size: 12px;
+    color: darkgray;
+    border-bottom: 1px solid lavender; }
+    .main .path span {
+      display: inline-block;
+      margin-right: 6px; }
+      .main .path span a {
+        color: darkgrey; }
+  .main .title {
+    width: 100%;
+    height: 45px;
+    float: left;
+    line-height: 44px; }
+    .main .title span {
+      font-size: 20px;
+      display: inline-block;
+      margin-right: 10px; }
+      .main .title span span {
+        font-size: 15px; }
+    .main .title :nth-child(3) {
+      color: red; }
+  .main .active {
+    width: 100%;
+    float: left;
+    height: 55px;
+    border: 1px solid lavender;
+    box-shadow: 5px 5px 5px darkgray; }
+    .main .active span {
+      display: inline-block;
+      margin-top: 6px;
+      margin-left: 6px; }
+    .main .active :nth-child(1) {
+      font-size: 22px; }
+    .main .active :nth-child(2) {
+      font-size: 12px; }
+  .main .hide {
+    width: 100%;
+    height: 50px;
+    background: black;
+    opacity: 0.5;
+    float: left;
+    margin-top: 10px;
+    display: none; }
+  .main .condition {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    float: left;
+    border: 1px solid lavender; }
+    .main .condition .brand {
+      width: 100%;
+      height: 49px;
+      border-bottom: 1px solid lavender; }
+      .main .condition .brand span {
+        display: inline-block;
+        float: left;
+        width: 15%;
+        font-size: 15px;
+        margin-top: 15px;
+        vertical-align: middle; }
+        .main .condition .brand span input {
+          width: 18px;
+          height: 18px;
+          vertical-align: middle; }
+        .main .condition .brand span label {
+          vertical-align: middle;
+          margin-left: 5px; }
+      .main .condition .brand :nth-child(1) {
+        margin-left: 15px; }
+      .main .condition .brand .d1 {
+        width: 5%; }
+    .main .condition .kinds {
+      width: 100%;
+      height: 50px; }
+      .main .condition .kinds span {
+        display: inline-block;
+        float: left;
+        width: 15%;
+        font-size: 15px;
+        margin-top: 15px;
+        vertical-align: middle; }
+        .main .condition .kinds span input {
+          width: 18px;
+          height: 18px;
+          vertical-align: middle; }
+        .main .condition .kinds span label {
+          vertical-align: middle;
+          margin-left: 5px; }
+      .main .condition .kinds :nth-child(1) {
+        margin-left: 15px; }
+      .main .condition .kinds .d1 {
+        width: 5%; }
+    .main .condition .sort {
+      width: 100%;
+      height: 40px;
+      margin-top: 15px; }
+      .main .condition .sort span {
+        display: inline-block;
+        float: left;
+        width: 10%;
+        margin-top: 5px;
+        text-align: center;
+        border: 1px solid darkgray;
+        margin-right: 15px;
+        height: 26px;
+        font-size: 15px;
+        line-height: 26px; }
+      .main .condition .sort span:hover {
+        color: red; }
+    .main .condition .show {
+      width: 100%;
+      float: left;
+      position: relative; }
+      .main .condition .show .sp {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border: 1px solid darkgray;
+        line-height: 28px; }
+      .main .condition .show .gao {
+        background: yellow; }
+      .main .condition .show .ye {
+        width: 100%;
+        height: 50px;
+        float: left;
+        text-align: center; }
+      .main .condition .show .list {
+        width: 100%;
+        float: left;
+        position: relative; }
+        .main .condition .show .list div {
+          width: 225px;
+          height: 380px;
+          float: left;
+          position: relative; }
+          .main .condition .show .list div img {
+            width: 220px;
+            height: 280px;
+            display: block; }
+          .main .condition .show .list div dl {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px; }
+          .main .condition .show .list div dt {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px; }
+          .main .condition .show .list div dd {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: red;
+            float: left; }
+          .main .condition .show .list div span {
+            display: inline-block;
+            color: black;
+            text-decoration: line-through;
+            font-size: 12px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 3px; }
+          .main .condition .show .list div button {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 30px;
+            background: red;
+            width: 100%;
+            display: inline-block;
+            color: white;
+            visibility: hidden; }
+          .main .condition .show .list div b {
+            position: absolute;
+            display: inline-block;
+            width: 80px;
+            height: 25px;
+            color: white;
+            top: 0;
+            left: 0;
+            background: url(../img/tuijian.png) no-repeat;
+            z-index: 100;
+            font-size: 12px;
+            text-align: left;
+            text-indent: 7px;
+            line-height: 25px; }
+          .main .condition .show .list div p {
+            position: absolute;
+            display: none; }
+
+/*底部*/
+.foot {
+  visibility: hidden;
+  margin-top: 1000px;
+  width: 100%;
+  height: 150px;
+  background: darkgray; }
+  .foot .table1 {
+    width: 900px;
+    margin: 0 auto;
+    display: flex; }
+    .foot .table1 li {
+      flex: 1;
+      height: 80px;
+      border-right: 1px solid darkgrey;
+      text-align: center;
+      margin-top: 20px; }
+      .foot .table1 li a {
+        display: block;
+        height: 50px;
+        color: black;
+        font-size: 30px; }
+      .foot .table1 li a:hover {
+        color: #DF5000; }
+      .foot .table1 li span {
+        font-size: 12px;
+        display: block; }
+    .foot .table1 :nth-child(6) {
+      border-right: none; }
+  .foot .table2 {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px; }
+    .foot .table2 li {
+      flex: 1;
+      text-align: center;
+      font-size: 12px; }
+      .foot .table2 li a {
+        color: black; }
+      .foot .table2 li a:hover {
+        color: #DF5000; }
+  .foot .shengming {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 30px; }
+    .foot .shengming span {
+      font-size: 12px; }
+    .foot .shengming :nth-child(1) {
+      float: left; }
+    .foot .shengming :nth-child(2) {
+      float: right; }
+  .foot .pg {
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 5px; }
+    .foot .pg span {
+      display: inline-block; }
+    .foot .pg :nth-child(1) {
+      float: left; }
+    .foot .pg :nth-child(2) {
+      float: right; }

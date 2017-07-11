@@ -27,7 +27,7 @@ $navColor:#DF5000;//导航划过颜色
     }}
 /*顶部下方图片*/
 .top-bot{
-    width: $wid;
+    width:940px;
     height: 100px;
     margin: 0 auto;
     background:url(../img/top-in.jpg) no-repeat ;
@@ -35,7 +35,7 @@ $navColor:#DF5000;//导航划过颜色
     
 }
 
-
+.fixed{position: fixed;top:0;left:0;right:0;z-index: 100;} 
 /*导航*/
 .nav{
     float: left;
@@ -45,9 +45,14 @@ $navColor:#DF5000;//导航划过颜色
     .hang{width: 900px;margin: 0 auto;
     ul{float: left;display:flex;width: $wid;
     li{float:left;flex: 1;line-height: 48px;}
-    a{font-size: 14px; color: white;display: inline-block;text-align:center;}
+    a{font-size: 14px; color: white;display: inline-block;text-align:center;position: relative;
+    div{width: 400px;height: 300px;background:white;position: absolute;top:49px;z-index: 100;box-shadow: 3px 3px 3px darkgray;
+    h6{display: block;width: 90%;height: 40px;border-bottom: 1px solid darkgray;margin: 0 auto;}
+    ol{width: 100%;height: 200px;margin-left: 20px;
+    li{color:darkgray ; clear: none; width: 100%;height: 30px;font-size: 12px;overflow: hidden;text-overflow: ellipsis;white-space: normal;text-align: left;}
+    li:hover{color: darkorange;}}}}
     a:hover{color: $navColor;}
-    :nth-of-type(6) {background: url(../img/xiaotupiao/new.png) no-repeat top right 13px;}
+    .new{background: url(../img/xiaotupiao/new.png) no-repeat top right 13px;}
     :nth-child(1) a{color: $navColor;}
     :nth-child(9) a{width: 200px;text-align: right;padding-right: 5px;}
     :nth-child(9) a span{border-right: 1px solid white;}
@@ -68,7 +73,7 @@ $navColor:#DF5000;//导航划过颜色
     
     position:relative;
     width: 1100px;
-    height: 1800px;
+    height: 800px;
     background:white;
     margin: 0 auto;
     top: -90px;
@@ -84,7 +89,7 @@ $navColor:#DF5000;//导航划过颜色
         span{display:inline-block;width: 70%;overflow: hidden;float: left;text-overflow:ellipsis;white-space: nowrap;margin-top: 3px;}
         b{display: inline-block;text-align:right;width:18%;float: left;font-size: 20px;color:red}
         dd{display:inline-block ;float: left;width: 10%; margin-top: 10px;font-size: 12px;color: red;}
-        dt{visibility: hidden; color: yellow;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background: greenyellow;opacity:0.4;}
+        dt{visibility: hidden; color:white;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background: black;opacity:0.6;text-align: center;line-height: 170px;}
         }}
         .right{width:31%;height:500px;margin-top: 0px;float: left;
         img{height: 490px;margin-top: 15px;}}
@@ -94,7 +99,7 @@ $navColor:#DF5000;//导航划过颜色
         span{display:inline-block;width: 70%;overflow: hidden;float: left;text-overflow:ellipsis;white-space: nowrap;margin-top: 3px};
         b{display: inline-block;text-align:right;width:18%;float: left;font-size: 20px;color:red}
         dd{display:inline-block ;float: left;width: 10%; margin-top: 10px;font-size: 12px;color: red;}
-        dt{color: yellow;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background: greenyellow;opacity:0.4;}
+        dt{color:white;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background:black;opacity:0.6;text-align: center;line-height: 170px;}
         }
         
         
@@ -109,7 +114,7 @@ $navColor:#DF5000;//导航划过颜色
         span{display:inline-block;width: 70%;overflow: hidden;float: left;text-overflow:ellipsis;white-space: nowrap;margin-top: 3px};
         b{display: inline-block;text-align:right;width:18%;float: left;font-size: 20px;color:red}
         dd{display:inline-block ;float: left;width: 10%; margin-top: 10px;font-size: 12px;color: red;}
-        dt{color: yellow;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background: greenyellow;opacity:0.4;}
+        dt{color: white;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background: black;opacity:0.6;text-align: center;line-height: 170px;}
         }}}
 /*女士用品*/        
         .woman{width: 100%;height: 600px;float: left;margin-left: 25px ;
@@ -121,25 +126,69 @@ $navColor:#DF5000;//导航划过颜色
         span{display:inline-block;width: 70%;overflow: hidden;float: left;text-overflow:ellipsis;white-space: nowrap;margin-top: 3px};
         b{display: inline-block;text-align:right;width:18%;float: left;font-size: 20px;color:red}
         dd{display:inline-block ;float: left;width: 10%; margin-top: 10px;font-size: 12px;color: red;}
-        dt{color: yellow;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background: greenyellow;opacity:0.4;}
+        dt{color:white;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background:black;opacity:0.6;text-align: center;line-height: 170px;}
           
           }}}
         
         
-        
-        .man{width: 100%;height: 840px;float: left;margin-left: 25px;
+ /*男士用品*/       
+        .man{width: 100%;height: 600px;float: left;margin-left: 25px;
         .title{font-size:30px;display: inline-block;width: 100%;}
-        .left{width: 320px;height: 500px;float: left;margin-top: 14px;}
+        .left{width: 320px;height: 500px;float: left;margin-top: 14px;
+         img{width: 320px;height: 486px;}}
          .right{display: inline-block; width: 780px;height: 500px;float: left;
         div{background: honeydew;display: inline-block;float: left;width:320px;height:230px;margin: 14px;position: relative;
         img{display: block;}
         span{display:inline-block;width: 70%;overflow: hidden;float: left;text-overflow:ellipsis;white-space: nowrap;margin-top: 3px};
         b{display: inline-block;text-align:right;width:18%;float: left;font-size: 20px;color:red}
         dd{display:inline-block ;float: left;width: 10%; margin-top: 10px;font-size: 12px;color: red;}
-        dt{color: yellow;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background: greenyellow;opacity:0.4;}
+        dt{color: white;position: absolute;left: 0;top: 0;width: 320px;height: 192px;background:black;opacity:0.6;text-align: center;line-height: 170px;}
           }}
           
         
     }
     
+/*更多品牌*/
+        .brand{width: 100%;height: 300px;float: left;margin-left: 25px;
+        .title{font-size:30px;display: inline-block;width: 100%;}
+        div{display: inline-block;width: 150px;height: 90px;float: left;background: red;margin: 10px;border:1px solid darkgrey;border-radius:5px 5px 5px 5px;}
+        }
+    
 }
+
+
+/*左下角广告区域*/
+         .box{
+             position: fixed;width: 100px;height: 310px;right:5%;bottom:6%;text-align: center;background:lavenderblush;visibility: hidden;
+             span{display: block; background: black;color:white;height:40px;line-height:35px}
+             p{font-size:12px;margin: 5px 0 5px 0;}
+             .fanhui:hover{background:#D3D3D3;}
+         }
+/*底部*/
+      .foot{
+          width: 100%;height: 250px;float: left;background: #F7F7F7 ;
+          .table1{width: 900px;margin: 0 auto;display: flex;
+          li{flex: 1;height: 80px;border-right: 1px solid darkgrey;text-align: center;margin-top: 20px;
+          
+          a{display: block;height:50px;color: black;font-size: 30px;}
+          a:hover{color: $navColor;}
+          span{font-size: 12px; display: block;}}
+          :nth-child(6){border-right: none}
+          }
+          .table2{width: 600px;margin: 0 auto;display: flex;margin-top: 10px;
+          li{flex:1;text-align: center;font-size: 12px;
+          a{color: black;}
+          a:hover{color:$navColor ;}}}
+          .shengming{
+              width: 500px;margin: 0 auto;margin-top: 15px;height:30px;
+              span{font-size: 12px;}
+              :nth-child(1){float: left;}
+              :nth-child(2){float: right ;}
+          }
+          .pg{
+              width: 180px;margin: 0 auto;margin-top: 5px;
+              span{display: inline-block;}
+              :nth-child(1){float: left;}
+              :nth-child(2){float: right;}
+          }
+      }         

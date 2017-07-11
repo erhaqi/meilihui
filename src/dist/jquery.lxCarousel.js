@@ -58,7 +58,7 @@
 				var $page = $('<div/>').addClass('page');
 				for(var i=1;i<=len-1;i++){
 					var $span = $('<span/>').text(i);
-
+      
 					// 给第一个span添加高亮
 					if(i==index+1){
 						$span.addClass('active');
@@ -84,9 +84,11 @@
 			$self.on('click','.prev',function(){
 				index--;
 				showPic();
+				
 			}).on('click','.next',function(){
 				index++;
 				showPic();
+				
 			})
 
 			// 移入移出
@@ -115,14 +117,20 @@
 
 			function showPic(){
 				// 到达最后一张时，重新回到第一张
-				if(index >= len){
+				var obj;
+				if(index >=len){
 					index = 1;
+					$ul.css('left',0);
+					
+				    
 				}else if(index<0){
-					index = len-1;
+					$ul.css('left',-3*opt.width);
+					index = len-2;
+					
 				}
 
 				// 滚动显示每一张图片
-				var obj;
+				
 
 				if(opt.type === 'horizontal'){
 					obj = {left:-index*opt.width};
@@ -134,8 +142,11 @@
 
 				// 高亮分页
 				if(opt.page){
-
+                    
 					$page.children().eq(index).addClass('active').siblings().removeClass();
+					if(index==3){
+						$page.children().eq(0).addClass('active').siblings().removeClass();
+					}
 				}
 			}
 		});
