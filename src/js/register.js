@@ -1,5 +1,5 @@
 require(['config'],function(){
-	require(['jquery'],function($){
+	require(['jquery','common'],function($){
 		
 		
 		//表单验证

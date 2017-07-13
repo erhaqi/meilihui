@@ -4,12 +4,13 @@ require.config({
 		lunbo:'../dist/jquery.lxCarousel',
 		fangda:'../dist/jquery.gdsZoom',
 		ajax:'../js/ajax',
-		
+		common:'../js/common'
 	},
 	shim:{
 		lunbo:['jquery'],
 		fangda:['jquery'],
-		ajax:['jquery']
+		ajax:['jquery'],
+		common:['jquery']
 	}
 	
 });

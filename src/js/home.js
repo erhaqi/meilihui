@@ -1,9 +1,10 @@
 require(['config'],function(){
 	
-	require(['jquery','lunbo','fangda','ajax','huiding','danwin'],function($,lunbo,fangda,ajax,huiding,danwin){
-	
+	require(['jquery','lunbo','fangda','ajax','huiding','danwin','common'],function($,lunbo,fangda,ajax,huiding,danwin,common){
+	   //显示会员名
+	    member();
+	    
 		//调用轮播图插件
-		
 		$('.lunbo').lxCarousel({
 				imgs:['img/lun1.jpg','img/lun2.jpg','img/lun3.jpg','img/lun1.jpg'],
 				width:window.innerWidth-20,

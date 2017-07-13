@@ -1,5 +1,5 @@
 require(['config'],function(){
-	require(['jquery'],function($){
+	require(['jquery','common'],function($){
 		
 		$('#foot').load('../html/foot.html',function(){
 			
@@ -37,9 +37,13 @@ require(['config'],function(){
 						
 						$('.table .hint').eq(0).css('visibility','hidden');
 						sessionStorage.setItem('name',Name);
-					    parent.location.href='../index.html';
+						setTimeout(function(){
+							parent.location.href='../index.html';
+						},2000);
+						$('.table .hint').eq(0).css('visibility','visible').text('正在进行页面跳转...');
+					   return false;
 					}else{
-						$('.table .hint').eq(0).css('visibility','visible').text('用户不存在或密码不正确');
+						$('.table .hint').eq(0).css('visibility','visible').text('用户不存或密码不正确');
 					}
 						
 					

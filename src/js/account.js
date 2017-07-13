@@ -1,5 +1,7 @@
 require(['config'],function(){
-	require(['jquery'],function($){
+	require(['jquery','common'],function($){
+		//显示会员名
+	    member();
 		//吸盘导航
 		xi();
 		//购物盒子

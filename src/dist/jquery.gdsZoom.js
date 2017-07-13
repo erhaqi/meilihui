@@ -31,8 +31,8 @@
 			// 设置大图定位
 			var btop,bleft;
 			if(opt.position === 'right'){
-				btop = $small.offset().top;
-				bleft = $small.offset().left + $small.outerWidth() + opt.gap;
+				btop = $small.offset().top-5;
+				bleft = $small.offset().left + $small.outerWidth() + opt.gap-15;
 			}else if(opt.position === 'bottom'){
 				btop = $small.offset().top + $small.outerHeight() + opt.gap;
 				bleft = $small.offset().left;

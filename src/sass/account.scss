@@ -52,7 +52,7 @@ $navColor:#DF5000;//导航划过颜色
     li{color:darkgray ; clear: none; width: 100%;height: 30px;font-size: 12px;overflow: hidden;text-overflow: ellipsis;white-space: normal;text-align: left;}
     li:hover{color: darkorange;}}}}
     :nth-child(9){
-        .hezi{width: 300px;right:-70%;height:300px;overflow:auto ;
+        .hezi{display: none; width: 300px;right:-70%;height:300px;overflow:auto ;
         
         .xing{width:300px;height: 100px;border-bottom:1px solid #ddd ;text-align: center;
         img{display: inline-block;width: 50px;height: 70px;float: left;border: 1px solid darkgray;margin-top:15px;margin-left: 5px;}

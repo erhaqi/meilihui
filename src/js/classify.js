@@ -2,7 +2,7 @@ require(['config'],function(){
 	var pageNo = 1;
 	var lastPage = 1;
 	var num=7;
-	require(['jquery'],function($){
+	require(['jquery','common'],function($){
 		
 		$.ajax({
 			type:"get",
@@ -90,33 +90,7 @@ require(['config'],function(){
 
 			});
 		//导航弹窗
-		$('.nav ul li a').on('mouseenter',function(){
-				
-				var index=$(this).parent().index();
-				if(index>0 && index<7){
-				
-				$(this).append($("<div class='dan'></div>").append($('<h6/>').text('热卖活动')));
-				$.ajax({
-					type:"get",
-					url:"../data/dan.json",
-					async:true,
-					success:function(res){
-						
-						$('.nav ul li a div').append($('<ol/>'));
-						$.each(res[index-1].name,function(idx,title){
-							
-							$('.nav ul li a div ol').append($('<li></li>'));
-							$('.nav ul li a div ol li').eq(idx).text(title);
-						});
-						
-					}
-				});
-			}
-			}).on('mouseleave',function(){
-				$(this).find($('div')).remove(); 
-				
-				
-			});
+		dan();
 			
 		
 		//价格排序

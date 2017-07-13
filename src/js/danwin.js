@@ -2,10 +2,10 @@ define(['jquery'],function(){
 	return{
 		danwin:function(){
 			$('.nav ul li a').on('mouseenter',function(){
-				console.log('aaaaaaaaaaaaa')
+				
 				var index=$(this).parent().index();
 				if(index>0 && index<7){
-				console.log(index)
+				
 				$(this).append($("<div class='dan'></div>").append($('<h6/>').text('热卖活动')));
 				$.ajax({
 					type:"get",
