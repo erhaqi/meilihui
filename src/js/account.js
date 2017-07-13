@@ -1,36 +1,15 @@
 require(['config'],function(){
 	require(['jquery'],function($){
+		//吸盘导航
+		xi();
+		//购物盒子
+		hezi();
+		//导航弹窗
+		dan();
 		var arr=localStorage.getItem('list');
 		arr=arr?JSON.parse(arr):[];
 		
-		//导航弹窗
-		$('.nav ul li a').on('mouseenter',function(){
-				
-				var index=$(this).parent().index();
-				if(index>0 && index<7){
-				
-				$(this).append($("<div class='dan'></div>").append($('<h6/>').text('热卖活动')));
-				$.ajax({
-					type:"get",
-					url:"../data/dan.json",
-					async:true,
-					success:function(res){
-						
-						$('.nav ul li a div').append($('<ol/>'));
-						$.each(res[index-1].name,function(idx,title){
-							
-							$('.nav ul li a div ol').append($('<li></li>'));
-							$('.nav ul li a div ol li').eq(idx).text(title);
-						});
-						
-					}
-				});
-			}
-			}).on('mouseleave',function(){
-				$(this).find($('div')).remove(); 
-				
-				
-			});
+		
 //生成购物车列表
 	  var cost=0;
 	 for(var i=0;i<arr.length;i++){
@@ -108,6 +87,7 @@ require(['config'],function(){
 	 	if($('.list input').prop('checked')==true){
 	 		$('.all').prop('checked',true);
 	 	}
+        
 	 	 var xiaoji=parseInt($(this).parent().find('.xiaoji').text().substring(1));
 	 	 console.log(xiaoji);
 	 	

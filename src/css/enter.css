@@ -52,9 +52,9 @@ body {
       .main .biao .table .hint {
         width: 50%;
         height: 20px;
-        background: red;
         margin-left: 88px;
-        visibility: hidden; }
+        visibility: hidden;
+        font-size: 12px; }
     .main .biao .btn {
       width: 78%;
       margin: 0 auto;

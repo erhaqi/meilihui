@@ -23,11 +23,11 @@
 
 	// 把读取到的内容转成数组
 	$arr_data = json_decode($content);
-	//排序
-    $sort=true;
-	if($sort){
-		rsort($arr_data);
-	}
+//	//排序
+//  $sort=true;
+//	if($sort){
+//		rsort($arr_data);
+//	}
 	// 根据分页截取数据
 	// 1:array($arr,0,10)
 	// 2:array($arr,10,10)

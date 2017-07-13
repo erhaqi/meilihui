@@ -57,9 +57,10 @@ body {
       .main .biao .table .hint {
         width: 50%;
         height: 20px;
-        background: red;
         margin-left: 88px;
-        visibility: hidden; }
+        visibility: hidden;
+        color: red;
+        font-size: 12px; }
     .main .biao .code {
       width: 100%;
       height: 55px;
@@ -77,13 +78,16 @@ body {
         margin-top: 14px;
         float: right;
         margin-right: 40px;
-        border: 1px solid darkgray; }
+        border: 1px solid darkgray;
+        text-align: center;
+        font-size: 22px; }
       .main .biao .code .hint {
         width: 50%;
         height: 20px;
-        background: red;
+        color: red;
         margin-left: 88px;
-        visibility: hidden; }
+        visibility: hidden;
+        font-size: 12px; }
     .main .biao .btn {
       width: 78%;
       margin: 0 auto;
@@ -97,7 +101,9 @@ body {
         background: red;
         border: none;
         float: right;
-        margin-bottom: 05px; }
+        margin-bottom: 05px;
+        font-size: 20px;
+        color: white; }
     .main .biao .clause {
       width: 100%;
       height: 22px;

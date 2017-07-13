@@ -51,6 +51,23 @@ $navColor:#DF5000;//导航划过颜色
     ol{width: 100%;height: 200px;margin-left: 20px;
     li{color:darkgray ; clear: none; width: 100%;height: 30px;font-size: 12px;overflow: hidden;text-overflow: ellipsis;white-space: normal;text-align: left;}
     li:hover{color: darkorange;}}}}
+    :nth-child(9){
+        .hezi{width: 300px;right:-70%;height:300px;overflow:auto ;
+        
+        .xing{width:300px;height: 100px;border-bottom:1px solid #ddd ;text-align: center;
+        img{display: inline-block;width: 50px;height: 70px;float: left;border: 1px solid darkgray;margin-top:15px;margin-left: 5px;}
+        dl{display: inline-block;float: left;width:160px;font-size: 12px;margin-top: 12px;margin-left: 10px;overflow: hidden;text-overflow: ellipsis;white-space: normal;
+        span{display:block;height: 30px;}
+        
+         :nth-child(1){width:160px; overflow: hidden;text-overflow: ellipsis;white-space: normal;}
+         :nth-child(2){width: 70px; color: darkslategray;}}
+        dt{display: inline-block;float: left;margin: 5px;color: darkgray;height: 100%;width: 30px;line-height: 170px;} 
+         
+         }
+         :last-child{border: none;}
+         }
+    }
+    
     a:hover{color: $navColor;}
     .new{background: url(../img/xiaotupiao/new.png) no-repeat top right 13px;}
     :nth-child(1) a{color: $navColor;}

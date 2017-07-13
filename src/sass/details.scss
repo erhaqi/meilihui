@@ -1,0 +1,126 @@
+/*头部样式*/
+$wid:900px; //主体宽度
+$navColor:#DF5000;//导航划过颜色
+.top{width: 100%;height: 30px;background-color: #F7F7F7 ;font-size: 12px;
+     .top-in{width: $wid;margin: 0 auto;}
+     a{color: black;display: inline-block;width: 77px;margin-top:7px;}
+     a:hover{color: red;}
+    .left{float: left;  
+     
+     :nth-child(1) a {color: red;}
+     :nth-child(1) img{display: inline-block;}
+     
+    li{float: left;text-align:center;
+    a{border-right: 1px solid black;}
+    
+    }
+    :nth-child(3) a{border-right:none ;}
+    }
+    
+    .right{float: right;
+    
+    li{float: left;width: 80px;text-align: center;
+    a{border-right: 1px solid black;}
+    }
+    :nth-child(3) a{border-right:none ;
+    span{display: inline-block;width: 50px;float: left;line-height: 18px;}}
+    }}
+/*顶部下方图片*/
+.top-bot{
+    width:940px;
+    height: 100px;
+    margin: 0 auto;
+    background:url(../img/top-in.jpg) no-repeat ;
+    background-size: cover;
+    
+}
+
+.fixed{position: fixed;top:0;left:0;right:0;z-index: 100;}
+/*导航*/
+.nav{
+    float: left;
+    width: 100%;
+    height: 50px;
+    background: black;
+    .hang{width: 900px;margin: 0 auto;
+    ul{float: left;display:flex;width: $wid;
+    li{float:left;flex: 1;line-height: 48px;}
+    a{font-size: 14px; color: white;display: inline-block;text-align:center;position: relative;
+    div{width: 400px;height: 300px;background:white;position: absolute;top:49px;z-index: 100;box-shadow: 3px 3px 3px darkgray;
+    h6{display: block;width: 90%;height: 40px;border-bottom: 1px solid darkgray;margin: 0 auto;}
+    ol{width: 100%;height: 200px;margin-left: 20px;
+    li{color:darkgray ; clear: none; width: 100%;height: 30px;font-size: 12px;overflow: hidden;text-overflow: ellipsis;white-space: normal;text-align: left;}
+    li:hover{color: darkorange;}}}}
+    :nth-child(9){
+        .hezi{width: 300px;right:-70%;height:300px;overflow:auto ;
+        
+        .xing{width:300px;height: 100px;border-bottom:1px solid #ddd ;text-align: center;
+        img{display: inline-block;width: 50px;height: 70px;float: left;border: 1px solid darkgray;margin-top:15px;margin-left: 5px;}
+        dl{display: inline-block;float: left;width:160px;font-size: 12px;margin-top: 12px;margin-left: 10px;overflow: hidden;text-overflow: ellipsis;white-space: normal;
+        span{display:block;height: 30px;}
+        
+         :nth-child(1){width:160px; overflow: hidden;text-overflow: ellipsis;white-space: normal;}
+         :nth-child(2){width: 70px; color: darkslategray;}}
+        dt{display: inline-block;float: left;margin: 5px;color: darkgray;height: 100%;width: 30px;line-height: 170px;} 
+         
+         }
+         :last-child{border: none;}
+         }
+    }
+    
+    a:hover{color: $navColor;}
+    .new{background: url(../img/xiaotupiao/new.png) no-repeat top right 13px;}
+    :nth-child(1) a{color: $navColor;}
+    :nth-child(9) a{width: 200px;text-align: right;padding-right: 5px;}
+    :nth-child(9) a span{border-right: 1px solid white;}
+    }
+    
+    }
+}
+
+.main{
+    width: 100%;float: left;
+    .path{width:900px;height:40px;margin:0 auto;margin-top:10px;
+    span{display:inline-block;float:left;font-size: 14px;color: darkgray;width:30px;text-align: center;}
+    :nth-child(5){width: 300px;text-align:left;color: darkslategray;}}
+    .information{width: 900px;height: 500px;margin: 0 auto;
+    .left{display: inline-block;float:left;width: 400px;height: 500px;
+    img{width: 400px;height: 500px;}}
+    .right{display:inline-block;float:left;width: 500px;height: 500px;
+     .brand{width: 100%;height: 40px;float: left;font-size:38px;font-weight: 800;line-height: 20px;}
+     .name{width:100%;height:30px ;float: left;color: darkgrey;}
+     .price{display: inline-block;width:80px;height:40px;float: left;color: red;font-size: 26px;font-weight: 700;}
+     .original{display:inline-block ;width: 80px;height:40px;float: left;color: darkgrey;font-size:20px;text-decoration: line-through;line-height:34px;margin-left: 5px;}
+     .go{width: 100%;height: 40px;float: left;background:lavender;
+     span{display: inline-block;float: left;margin-top: 10px;font-size: 14px;}
+     :nth-child(1){font-size: 20px;color: red;margin-left: 10px;}
+     :nth-child(2){margin-left: 15px;line-height:24px;}}
+    
+     .color{width: 100%;height: 30px;float: left;margin-top: 20px;color: darkgrey;font-size: 15px;
+      span{display: inline-block;float: left;}
+      :nth-child(2){color: black;margin-left: 5px;}}
+      .pte{width:100%;height: 70px;float: left;
+      img{width: 50px;height: 70px;border: 1px solid darkgray;}}
+      .num{width: 100%;height: 30px;float: left;margin-top: 5px;color: darkgrey;font-size: 15px;}
+      .jisuan{width: 100%;height: 40px;float: left;
+      span{display: inline-block;float: left;width: 40px;height: 40px;text-align: center;}
+               :nth-child(1){font-size: 30px;background:lavender ;}
+               :nth-child(2){margin-top: 10px;}
+               :nth-child(3){font-size:30px ;background:lavender;}}
+    
+      .shipments{width:100%;height: 36px;float: left;font-size: 14px;color: darkgrey;line-height: 35px;
+      .riqi{color: black;font-weight:600;}}
+      .shop{width: 100%;height: 50px;float: left;margin-top: 15px;
+      button{width: 160px;height: 50px;border: none;color: white;background: red;font-size: 22px;}}
+    
+    
+    
+    
+    }}
+    
+
+
+
+
+
+}

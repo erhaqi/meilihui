@@ -11,7 +11,7 @@
 	
 	$conn->set_charset('utf8');
 	
-    $sql="select id,name,imgUrl,price,original,brand,kinds from picture";
+    $sql="select id,name,imgUrl,price,original,brand,color,kinds from picture";
     
     $result=$conn->query($sql);
    
