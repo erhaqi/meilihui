@@ -90,21 +90,24 @@ require(['config'],function(){
          //加加减减
          $('.jia').on("click",function(){
          	$('.number').text(parseInt($('.number').text())+1);
-         	goods.num+=1;
+         	goods.num=parseInt($('.number').text());
+         
          	
          });
          
          $('.jian').on('click',function(){
          	$('.number').text(parseInt($('.number').text())-1);
-         	goods.num-=1;
+         	goods.num=parseInt($('.number').text());
          	if(parseInt($('.number').text())<1){
          		$('.number').text('1');
-         		goods.num=1;
+         		
          	}
          	
          });
          //加入到购物车
          $('.shop button').on('click',function(){
+         	goods.num=parseInt($('.number').text());
+         	console.log(goods.num);
          	if(arr.length==0){
          		arr.push(goods);
          	}else{
@@ -112,14 +115,19 @@ require(['config'],function(){
          			if(arr[i].id==goods.id){
          				goods.num+=arr[i].num;
          				arr.splice(i,1);
+         				
+         				
          			}
          			
          	}
          	arr.unshift(goods);
+         	
+         	
+         	
+         	
          }		
-         		
-         		
         localStorage.setItem('list',JSON.stringify(arr));
+        
         //弹出购物盒子
         $('.hezi').html('');
         for(var i=0;i<arr.length;i++){
@@ -128,11 +136,12 @@ require(['config'],function(){
 			$('.hezi .xing').eq(i).append($('<dl/>').html("<span>"+arr[i].name+"</span><span>"+arr[i].num +'*'+arr[i].pricce.substring(1)+"</span>"));
 			$('.hezi .xing').eq(i).append($('<dt/>').text("删除"));
 		}
-		 $('.hezi').slideDown(2000).slideUp(1000);
+		 $('.hezi').stop(true).slideDown(2000).slideUp(1000);
+         
         
         
          });
-       
+         
        
        });
 	

@@ -1,22 +1,27 @@
 <?php
-	
-	$servername='localhost';
-	$username="root";
-	$password='';
-	$database='commodity';
-	
-	
-	$conn = new mysqli($servername,$username,$password,$database);
-	
-	
-	$conn->set_charset('utf8');
-	
-    $sql="select id,name,imgUrl,price,original,brand,kinds from picture";
-    
-    $result=$conn->query($sql);
-   
-    $row = $result->fetch_all(MYSQLI_ASSOC);
-    $res = json_encode($row,JSON_UNESCAPED_UNICODE);
-	echo $res;
-
+$q = isset($_POST['name'])? $_POST['name'] : '';
+if(is_array($q)) {
+    $sites = array(
+            'RUNOOB' => '菜鸟教程: http://www.runoob.com',
+            'GOOGLE' => 'Google 搜索: http://www.google.com',
+            'TAOBAO' => '淘宝: http://www.taobao.com',
+    );
+    foreach($q as $val) {
+        // PHP_EOL 为常量，用于换行
+        echo $sites[$val] . PHP_EOL;
+    }
+      
+} else {
+?>
+<form action="" method="post"> 
+    <select multiple="multiple" name="q[]">
+    <option value="">选择一个站点:</option>
+    <option value="RUNOOB">Runoob</option>
+    <option value="GOOGLE">Google</option>
+    <option value="TAOBAO">Taobao</option>
+    </select>
+    <input type="submit" value="提交">
+    </form>
+<?php
+}
 ?>

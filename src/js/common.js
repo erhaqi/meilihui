@@ -44,7 +44,7 @@ function dan(){
   
 }
 
-//洗盘菜单
+//吸盘菜单
     function xi(){
     	$(window).on('scroll',function(){
 		if(window.scrollY>120){

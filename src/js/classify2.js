@@ -146,9 +146,9 @@ require(['config'],function(){
 			$('.hezi .xing').eq(i).append($('<dl/>').html("<span>"+arr[i].name+"</span><span>"+arr[i].num +'*'+arr[i].pricce.substring(1)+"</span>"));
 			$('.hezi .xing').eq(i).append($('<dt/>').text("删除"));
 		}
-		 $('.hezi').slideDown(2000).slideUp(1000);
+		 $('.hezi').stop(true).slideDown(1000).slideUp(1000);
 		 
-		 
+	
 });
 
    //购物菜单盒子

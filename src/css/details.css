@@ -374,6 +374,99 @@
         float: left;
         width: 80;
         height: 100px; }
+      .main .information .xiaotu .promise {
+        display: inline-block;
+        float: right;
+        width: 500px;
+        height: 100px; }
+        .main .information .xiaotu .promise span {
+          display: inline-block;
+          float: left;
+          font-size: 16px;
+          margin-right: 15px;
+          height: 50px;
+          width: 150px;
+          line-height: 20px;
+          margin-top: 35px; }
+          .main .information .xiaotu .promise span a {
+            display: inline-block;
+            font-size: 30px;
+            height: 50px;
+            float: left;
+            color: black; }
+  .main .size {
+    width: 900px;
+    height: 400px;
+    float: left;
+    margin-top: 40px; }
+    .main .size .title {
+      width: 100%;
+      height: 50px;
+      float: left;
+      text-align: center;
+      font-size: 30px;
+      line-height: 50px; }
+  .main .chi {
+    width: 100%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    color: darkslategray; }
+  .main .danwei {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    float: left;
+    line-height: 30px;
+    color: darkgray;
+    font-size: 15px; }
+  .main .length {
+    width: 100%;
+    background: red;
+    float: left;
+    height: 40px; }
+    .main .length .left {
+      display: inline-block;
+      float: left;
+      width: 150px;
+      height: 40px;
+      background: black;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      line-height: 40px; }
+    .main .length .right {
+      width: 750px;
+      height: 40px;
+      float: left;
+      display: inline-block;
+      text-align: center;
+      background: darkgrey;
+      line-height: 40px; }
+  .main .topic {
+    width: 100%;
+    height: 40px;
+    float: left;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 30px; }
+  .main .subhead {
+    width: 100%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    color: darkslategrey;
+    font-size: 20px; }
+  .main .text {
+    width: 100%;
+    height: 120px;
+    float: left;
+    margin-top: 40px;
+    font-size: 16px;
+    color: darkgrey; }
 
 /*底部*/
 .foot {
